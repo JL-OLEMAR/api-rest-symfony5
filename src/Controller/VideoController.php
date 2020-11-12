@@ -159,7 +159,7 @@ class VideoController extends AbstractController
 
             // Recoger el parametro page de la url
             $page = $request->query->getInt('page', 1);
-            $items_per_page = 5;
+            $items_per_page = 6;
 
             // Invocar paginacion
             $pagination = $paginator->paginate($query, $page, $items_per_page);
